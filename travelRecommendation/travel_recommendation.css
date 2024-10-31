@@ -1,0 +1,141 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("./travelpic.jpg"); /* Path to your background image */
+  background-size: cover; /* Ensure the image covers the whole viewport */
+  background-position: center bottom; /* Centered horizontally and anchored at the bottom */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background fixed during scrolling */
+  color: white; /* Ensures the text is visible */
+  text-align: center; /* Centers the text in the body */
+}
+
+/* Navigation Bar Styles */
+nav {
+  background-color: rgba(
+    30,
+    43,
+    46,
+    0.8
+  ); /* Semi-transparent dark background color */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1 {
+  color: white;
+  font-size: 24px;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.plane-icon {
+  width: 24px; /* Adjust size as needed */
+  height: 24px; /* Adjust size as needed */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the nav items */
+  flex-grow: 1; /* Allow ul to grow and take space */
+  gap: 15px; /* Space between links */
+}
+
+/* Remove margin from the last item (search container) */
+nav ul li:last-child {
+  margin-left: auto; /* Pushes the search container to the right */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #7ed3e1; /* Light blue hover effect */
+}
+
+/* Search Input and Buttons */
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+#conditionInput {
+  padding: 8px 15px;
+  border-radius: 20px 0 0 20px; /* Rounded left corners */
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  width: 250px;
+  border-right: none; /* Remove right border to blend with button */
+}
+
+#btnSearch,
+#btnClear {
+  border-radius: 0 20px 20px 0; /* Rounded right corners */
+  border: 1px solid #ccc; /* Keep border to match input */
+  color: white;
+  background-color: #00796b; /* Teal color */
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px 15px;
+  margin-left: -1px; /* Overlap borders slightly */
+}
+
+#btnSearch:hover,
+#btnClear:hover {
+  background-color: #005a4f; /* Darker teal on hover */
+}
+
+#btnClear {
+  background-color: #6c757d; /* Gray color */
+}
+
+#btnClear:hover {
+  background-color: #5a6268; /* Darker gray on hover */
+}
+
+/* Description Section Styles */
+.description {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(
+    30,
+    43,
+    46,
+    0.7
+  ); /* Semi-transparent background for description */
+  border-radius: 10px;
+}
+
+/* Booking Button Styles */
+.booking-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffcc00; /* Button color */
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.booking-button:hover {
+  background-color: #ffd633; /* Button hover effect */
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Recommendations</title>
+    <link rel="stylesheet" href="./travel_recommendation.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>
+        <img src="./plane.svg" alt="Plane Icon" class="plane-icon" />
+        Travel Skies
+      </h1>
+      <ul>
+        <li><a href="./travel_recommendation.html" id="home">Home</a></li>
+        <li><a href="./travel_aboutUs.html" id="aboutUs">About Us</a></li>
+        <li><a href="./travel_contact.html" id="contact">Contact Us</a></li>
+        <li>
+          <div class="search-container">
+            <input
+              type="text"
+              id="conditionInput"
+              placeholder="Enter a destination or keyword"
+            />
+            <button id="btnSearch">Search</button>
+            <button id="btnClear">Clear</button>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="description">
+      <h1><strong>Adventure Awaits!</strong></h1>
+      <h2>
+        Explore our curated travel recommendations and start planning your next
+        trip today!
+      </h2>
+    </div>
+
+    <button
+      class="booking-button"
+      onclick="window.location.href='./booking.html'"
+    >
+      Book Now
+    </button>
+
+    <script src="./travel_recommendation.js"></script>
+  </body>
+</html>
